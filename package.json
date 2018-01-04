@@ -1,0 +1,25 @@
+{
+  "name": "flying-focus",
+  "version": "1.4.1",
+  "homepage": "https://github.com/julmot/flying-focus",
+  "contributors": [
+    {
+      "name": "Nikita Vasilyev",
+      "email": "me@elv1s.ru"
+    },
+    {
+      "name": "Julian Kuehnel",
+      "url": "https://github.com/julmot"
+    }
+  ],
+  "description": "Adds a transition to the focus outline when you tab around inputs, buttons, and links.",
+  "main": "flying-focus.js",
+  "keywords": [
+    "focus",
+    "UI",
+    "UX",
+    "accessibility",
+    "animation"
+  ],
+  "license": "MIT"
+}

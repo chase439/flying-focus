@@ -2,6 +2,16 @@
  · [Focus Snail](//github.com/NV/focus-snail/)
  · [Focus Zoom](//github.com/NV/focus-zoom/)
  · [Focus Hug](//github.com/NV/focus-hug/)
+ 
+# Improvements to Original Repository
+
+This is a fork of [flying-focus](https://github.com/NV/flying-focus/). In the original repository, the focus disappears after 150ms. In this fork, it will remain visible when navigating using tab. Also, this fork has a package.json for directly installing it from GitHub using:
+
+```bash
+$ npm install julmot/flying-focus#gh-pages
+```
+
+All other files that aren't necessary for the standalone version were removed.
 
 # [Focus Transition](http://n12v.com/focus-transition/)
 
