@@ -26,6 +26,11 @@
     }
   }, false);
 
+  docElem.addEventListener('mousedown', function(event) {
+    if(ringElem) {
+      onEnd();
+    }
+  }, false);
 
   docElem.addEventListener('focus', function(event) {
     var target = event.target;
