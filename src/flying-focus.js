@@ -8,7 +8,6 @@
   var TRANSITION_DURATION = 150;
 
   var ringElem = null;
-  var movingId = 0;
   var prevFocused = null;
   var keyDownTime = 0;
 
@@ -78,12 +77,8 @@
   }
 
   function onEnd(onlyIf) {
-    if (onlyIf && !movingId) {
+    if (onlyIf) {
       return;
-    }
-    if(movingId){
-      clearTimeout(movingId);
-      movingId = 0;
     }
     ringElem.classList.remove('flying-focus_visible');
     if(prevFocused){
