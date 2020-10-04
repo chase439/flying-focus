@@ -1,8 +1,8 @@
 {
   "name": "flying-focus",
   "version": "1.4.2",
-  "description": "highlight tab focused items for accessibility",
-  "main": "src/flying-focus.js",
+  "description": "Highlight HTML elements on focus for accessibility",
+  "main": "src/js/flying-focus.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/chase439/flying-focus.git"
@@ -16,6 +16,10 @@
     {
       "name": "Julian Kuehnel",
       "url": "https://github.com/julmot"
+    },
+    {
+      "name": "Lodder",
+      "url": "https://github.com/C-Lodder"
     },
     {
       "name": "Chase Tran",
