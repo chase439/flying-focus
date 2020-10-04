@@ -1,6 +1,6 @@
 {
-  "name": "flying-focus",
-  "version": "1.4.2",
+  "name": "@chase439/flying-focus",
+  "version": "1.5.0",
   "description": "Highlight HTML elements on focus for accessibility",
   "main": "src/js/flying-focus.js",
   "repository": {
@@ -9,22 +9,10 @@
   },
   "homepage": "https://github.com/chase439/flying-focus",
   "contributors": [
-    {
-      "name": "Nikita Vasilyev",
-      "email": "me@elv1s.ru"
-    },
-    {
-      "name": "Julian Kuehnel",
-      "url": "https://github.com/julmot"
-    },
-    {
-      "name": "Lodder",
-      "url": "https://github.com/C-Lodder"
-    },
-    {
-      "name": "Chase Tran",
-      "url": "https://github.com/chase439"
-    }
+    "Nikita Vasilyev <me@elv1s.ru> (https://github.com/NV)",
+    "Julian Kuehnel (https://github.com/julmot)",
+    "Lodder (https://github.com/C-Lodder)",
+    "Chase Tran (https://github.com/chase439)"
   ],
   "keywords": [
     "flying-focus",
