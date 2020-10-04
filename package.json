@@ -1,7 +1,13 @@
 {
   "name": "flying-focus",
-  "version": "1.4.1",
-  "homepage": "https://github.com/julmot/flying-focus",
+  "version": "1.4.2",
+  "description": "highlight tab focused items for accessibility",
+  "main": "flying-focus.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/chase439/flying-focus.git"
+  },
+  "homepage": "https://github.com/chase439/flying-focus",
   "contributors": [
     {
       "name": "Nikita Vasilyev",
@@ -10,14 +16,19 @@
     {
       "name": "Julian Kuehnel",
       "url": "https://github.com/julmot"
+    },
+    {
+      "name": "Chase Tran",
+      "url": "https://github.com/chase439"
     }
   ],
-  "description": "Adds a transition to the focus outline when you tab around inputs, buttons, and links.",
-  "main": "flying-focus.js",
   "keywords": [
+    "flying-focus",
     "focus",
     "UI",
     "UX",
+    "highlight",
+    "ring",
     "accessibility",
     "animation"
   ],
