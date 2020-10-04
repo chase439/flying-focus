@@ -76,8 +76,8 @@
     body.appendChild(ringElem);
   }
 
-  function onEnd(onlyIf) {
-    if (onlyIf) {
+  function onEnd(keepRing) {
+    if (keepRing) {
       return;
     }
     ringElem.classList.remove('flying-focus_visible');
