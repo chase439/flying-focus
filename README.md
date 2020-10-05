@@ -41,3 +41,13 @@ document.addEventListener("DOMContentLoaded", function() {
 ![Flying Focus icon](http://nv.github.io/flying-focus/chrome/icon_128.png)
 
 Flying Focus is a UI concept. It adds a transition to the focus outline when you tab around inputs, buttons, and links.
+
+# To Publish
+
+```bash
+# increment version in package.json
+npm install <local path to flying-focus>
+git commit -am "bump version"
+git push origin master
+npm publish --access public
+```
