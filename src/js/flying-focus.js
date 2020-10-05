@@ -1,18 +1,18 @@
 (function() {
-  'use strict';
+  "use strict";
 
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener("DOMContentLoaded", function() {
 
-    var TRANSITION_DURATION = 150,
-      ringElem = null,
-      prevFocused = null,
-      keyDownTime = 0,
-      win = window,
-      doc = document,
-      docElem = doc.documentElement,
-      body = doc.body;
+    var TRANSITION_DURATION = 150;
+    var ringElem = null;
+    var prevFocused = null;
+    var keyDownTime = 0;
+    var win = window;
+    var doc = document;
+    var docElem = doc.documentElement;
+    var body = doc.body;
 
-    docElem.addEventListener('keydown', function(event) {
+    docElem.addEventListener("keydown", function(event) {
       var code = event.which;
       // Show animation only upon Tab or Arrow keys press.
       if (code === 9 || (code > 36 && code < 41)) {
@@ -20,15 +20,15 @@
       }
     }, false);
 
-    docElem.addEventListener('mousedown', function(event) {
+    docElem.addEventListener("mousedown", function(event) {
       if(ringElem) {
         onEnd();
       }
     }, false);
 
-    docElem.addEventListener('focus', function(event) {
+    docElem.addEventListener("focus", function(event) {
       var target = event.target;
-      if (target.id === 'flying-focus') {
+      if (target.id === "flying-focus") {
         return;
       }
 
@@ -39,10 +39,10 @@
       }
 
       var offset = offsetOf(target);
-      ringElem.style.left = offset.left + 'px';
-      ringElem.style.top = offset.top + 'px';
-      ringElem.style.width = target.offsetWidth + 'px';
-      ringElem.style.height = target.offsetHeight + 'px';
+      ringElem.style.left = offset.left + "px";
+      ringElem.style.top = offset.top + "px";
+      ringElem.style.width = target.offsetWidth + "px";
+      ringElem.style.height = target.offsetHeight + "px";
 
       if(isFirstFocus){
         return;
@@ -54,27 +54,27 @@
       }
 
       onEnd(true);
-      target.classList.add('flying-focus_target');
-      ringElem.classList.add('flying-focus_visible');
+      target.classList.add("flying-focus_target");
+      ringElem.classList.add("flying-focus_visible");
       prevFocused = target;
     }, true);
 
 
-    docElem.addEventListener('blur', function() {
+    docElem.addEventListener("blur", function() {
       onEnd(true);
     }, true);
 
 
     function initialize() {
       // Check if the element already exists to prevent duplicates
-      if (document.getElementById('flying-focus')) {
+      if (document.getElementById("flying-focus")) {
         return;
       }
 
       // Use uniq element name to decrease the chances of a conflict with website styles
-      ringElem = doc.createElement('flying-focus');
-      ringElem.id = 'flying-focus';
-      ringElem.style.transitionDuration = ringElem.style.WebkitTransitionDuration = TRANSITION_DURATION / 1000 + 's';
+      ringElem = doc.createElement("flying-focus");
+      ringElem.id = "flying-focus";
+      ringElem.style.transitionDuration = ringElem.style.WebkitTransitionDuration = TRANSITION_DURATION / 1000 + "s";
       body.appendChild(ringElem);
     }
 
@@ -82,15 +82,15 @@
       if (keepRing) {
         return;
       }
-      ringElem.classList.remove('flying-focus_visible');
+      ringElem.classList.remove("flying-focus_visible");
       if(prevFocused){
-        prevFocused.classList.remove('flying-focus_target');
+        prevFocused.classList.remove("flying-focus_target");
         prevFocused = null;
       }
     }
 
     function isJustPressed() {
-      return Date.now() - keyDownTime < 42
+      return Date.now() - keyDownTime < 42;
     }
 
     function offsetOf(elem) {
