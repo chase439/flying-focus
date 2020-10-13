@@ -24,5 +24,15 @@
     "accessibility",
     "animation"
   ],
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-cli": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-sass": "^2.0.0",
+    "grunt-scss-lint": "^0.5.0"
+  },
   "license": "MIT"
 }
