@@ -42,11 +42,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 Flying Focus is a UI concept. It adds a transition to the focus outline when you tab around inputs, buttons, and links.
 
+
+# Development
+
+Install GRUNT CLI to compile files in src/ to dist/:
+```bash
+$ npm install -g grunt-cli
+$ grunt # run tasks in Gruntfile.js
+```
+
 # To Publish
 
 ```bash
 # increment version in package.json
-npm install <local path to flying-focus>
+npm install <local path to flying-focus> # test installation, update version in lock file
 git commit -am "bump version"
 git push origin master
 npm publish --access public
